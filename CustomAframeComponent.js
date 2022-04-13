@@ -15,3 +15,9 @@ AFRAME.registerComponent('remove-xr-buttons', {
 	}
 });
 
+AFRAME.registerComponent('log', {
+	init: function () {
+		console.log("aaa");
+		console.log(this.el.sceneEl);
+	}
+});
