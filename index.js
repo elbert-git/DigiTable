@@ -18,3 +18,8 @@ function previewFile() {
 	document.getElementById("defaultModel").remove();
 }
 
+document.querySelector('a-scene').addEventListener('loaded', function () {
+	console.log("removing ar buttons");
+	document.getElementsByClassName('a-enter-vr-button')[0].remove();
+	document.getElementsByClassName('a-enter-ar-button')[0].remove();
+})
