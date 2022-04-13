@@ -11,8 +11,8 @@
 	<script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
 	<!-- a-frame orbit controls -->
 	<script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
-	<!-- custom a-frame stuff -->
-	<script src="./customAframeComponents.js"></script>
+	<!-- custom a-frame components -->
+	<script src="./CustomAframeComponent.js"></script>
 	 
 	<!-- stylesheet -->
 	<link rel="stylesheet" href="./index.css">
@@ -22,6 +22,7 @@
 <body>
 	<div class="bg"></div>
 	<a-scene 
+			remove-xr-buttons
 			webxr="optionalFeatures: hit-test, dom-overlay; overlayElement:#overlay;"
 			vr-mode-ui="enterARButton: #AR-button;"
 			background="transparent:true"
