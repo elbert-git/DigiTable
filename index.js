@@ -1,5 +1,4 @@
-const reticle = document.querySelector('[ar-hit-test]');
-
+// on file upload function
 function previewFile() {
 	const preview = document.getElementById("entityUpload")
 	const file = document.querySelector('input[type=file]').files[0];
@@ -17,3 +16,13 @@ function previewFile() {
 	//delete default model
 	document.getElementById("defaultModel").remove();
 }
+ 
+// on ar-hit track started and found events
+const arEl = document.getElementsByTagName("a-scene")[0];
+arEl.addEventListener('ar-hit-test-start', function() {
+	document.getElementById("overlay").classList.remove("hide");
+})
+arEl.addEventListener('ar-hit-test-achieved', function() {
+	document.getElementsByClassName("ar-help-window")[0].classList.add("hide");
+})
+
