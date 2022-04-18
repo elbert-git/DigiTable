@@ -17,4 +17,3 @@ function previewFile() {
 	//delete default model
 	document.getElementById("defaultModel").remove();
 }
-
